@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Bungee&display=swap');
+
 body{
     
 }
@@ -5,7 +7,23 @@ body{
     line-height: 5px;
     style: inline;
     text-align: center;
-}
+    width: 10%;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 610px;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    flex-wrap: nowrap;
+    font-family: "Bungee";
+    font-weight: 100;
 .title-right{
-    
+    line-height: 13.5px;
+    background-color: #356920;
+}
+.title-left{
+   background-color: #356920; 
 }
