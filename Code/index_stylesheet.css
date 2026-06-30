@@ -1,29 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap');
 
 body{
     
 }
+.triple-row{    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .titles{
-    line-height: 5px;
     style: inline;
     text-align: center;
     width: 10%;
-    font-size: 30px;
-    display: flex;
+    font-size: 46px;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
-    height: 610px;
+    height: 940px;
     padding: 0;
     width: 100%;
     margin: 0;
     flex-wrap: nowrap;
-    font-family: "Bungee";
+    font-family: "Nothing";
     font-weight: 100;
+    color: white;
+    padding-top: 0;
+    padding: 20px;
+}
 .title-right{
     line-height: 13.5px;
     background-color: #356920;
+    width: 200px;
 }
 .title-left{
    background-color: #356920; 
+   width: 200px;
+   line-height: 7px;
+}
+.menu{
+    text-align: center;
+    background-color: #356920;
+    width: 200px;
+    
 }
