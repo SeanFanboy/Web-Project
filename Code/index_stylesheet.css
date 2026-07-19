@@ -1,62 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap');
-*{
-    box-sizing: border-box;
-}
-
-body{
+body {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
+}
+
+/* Outer wrapper holding the 3 main vertical pillars */
+.quad-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     min-height: 100vh;
 }
 
-.titles{
-    style: inline;
-    text-align: center;
-    width: 10%;
-    font-size: 47px;
-    flex-direction: row;
-    height: 1080px;
-    padding: 0;
-    width: 100%;
-    margin: 0;
-    flex-wrap: nowrap;
-    font-family: "Nothing";
-    font-weight: 100;
+/* Styles both sidebars */
+.title-left, .title-right {
+    background-color: #2e6b22; 
     color: white;
-    padding-top: 0;
-    padding: 20px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    padding: 20px 10px;
+    width: 70px;
+    box-sizing: border-box;
+    flex-shrink: 0; /* Keeps sidebars from squeezing dynamically */
 }
-.title-right{
-    line-height: 13.5px;
-    background-color: #356920;
-    width: 210px;
-    height: 100%;
+
+.title-left h1, .title-right h1 {
+    margin: 2px 0;
+    font-size: 1.5rem;
 }
-.title-left{
-   background-color: #356920; 
-   width: 210px;
-   line-height: 7px;
-   height: 100%;
+
+/* CRITICAL FIX: Stacks the menu on top and the images below */
+.center-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column; 
 }
-.menu{
-    text-align: center;
-    background-color: #356920;
-    width: 100%;
+
+/* Green top navigation menu stretching 100% across the center */
+.menu {
     display: flex;
     flex-direction: row;
+    background-color: #2e6b22;
+    width: 100%;
 }
-.pre-aura{
-   border: 5px solid grey;
-   width: 500px;
+
+.menu div {
+    padding: 15px 30px;
+    border-right: 1px solid #23531a;
 }
-.true-aura{
-    border: 5px solid grey;
-    width: 500px;
+
+.menu h3 {
+    margin: 0;
+    color: white;
 }
-.fake-aura{
-    border: 5px solid grey;
-    width: 500px;
+
+/* Centers your horizontal row of images in the white space below the menu */
+.Small-Info {
+    display: flex;
+    flex-direction: row; /* Aligns images side-by-side */
+    justify-content: center; /* Centers the row horizontally */
+    align-items: center; /* Centers the row vertically */
+    flex-grow: 1;
+    gap: 40px; /* Even spacing between image blocks */
+    padding: 20px;
+}
+
+/* Stacks text cleanly under each individual image */
+.Info-Top, .Info-Middle, .Info-Bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.Small-Info img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+}
+
+.Small-Info p {
+    margin: 10px 0 0 0;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    font-weight: bold;
 }
