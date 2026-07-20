@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Aldrich';
 }
 
-/* Outer wrapper holding the 3 main vertical pillars */
+
 .quad-row {
     display: flex;
     flex-direction: row;
@@ -12,7 +14,7 @@ body {
     min-height: 100vh;
 }
 
-/* Styles both sidebars */
+
 .title-left, .title-right {
     background-color: #2e6b22; 
     color: white;
@@ -20,54 +22,52 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 20px 10px;
-    width: 70px;
+    width: 10%;
     box-sizing: border-box;
-    flex-shrink: 0; /* Keeps sidebars from squeezing dynamically */
+    flex-shrink: 0; 
+    font-size: 26px;
+    line-height: 0px;
 }
 
-.title-left h1, .title-right h1 {
-    margin: 2px 0;
-    font-size: 1.5rem;
-}
 
-/* CRITICAL FIX: Stacks the menu on top and the images below */
 .center-content {
     flex-grow: 1;
     display: flex;
     flex-direction: column; 
+    text-align: center;
 }
 
-/* Green top navigation menu stretching 100% across the center */
 .menu {
     display: flex;
     flex-direction: row;
     background-color: #2e6b22;
-    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    justify-content: center;
 }
 
 .menu div {
     padding: 15px 30px;
-    border-right: 1px solid #23531a;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
 }
 
 .menu h3 {
-    margin: 0;
+    margin: 10px; 
     color: white;
 }
 
-/* Centers your horizontal row of images in the white space below the menu */
 .Small-Info {
     display: flex;
-    flex-direction: row; /* Aligns images side-by-side */
-    justify-content: center; /* Centers the row horizontally */
-    align-items: center; /* Centers the row vertically */
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
     flex-grow: 1;
-    gap: 40px; /* Even spacing between image blocks */
+    gap: 40px; 
     padding: 20px;
 }
 
-/* Stacks text cleanly under each individual image */
-.Info-Top, .Info-Middle, .Info-Bottom {
+.Info-Left, .Info-Middle, .Info-Right {
     display: flex;
     flex-direction: column;
     align-items: center;
