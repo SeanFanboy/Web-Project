@@ -27,6 +27,7 @@ body {
     flex-shrink: 0; 
     font-size: 26px;
     line-height: 0px;
+    max-height: 100%;
 }
 
 
@@ -52,9 +53,14 @@ body {
     border-left: 3px solid black;
 }
 
-.menu h3 {
+.menu a {
     margin: 10px; 
     color: white;
+    text-decoration: none;
+}
+
+.menu div:hover{
+    background-color: #23521a;
 }
 
 .Small-Info {
@@ -63,8 +69,9 @@ body {
     justify-content: center; 
     align-items: center; 
     flex-grow: 1;
-    gap: 40px; 
-    padding: 20px;
+    gap: 180px; 
+    padding: 30px;
+    padding-bottom: 500px;
 }
 
 .Info-Left, .Info-Middle, .Info-Right {
@@ -75,16 +82,15 @@ body {
 }
 
 .Small-Info img {
-    max-width: 200px;
-    width: 100%;
+    max-width: 600px;
+    width: 140%;
     height: auto;
     display: block;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
 }
 
 .Small-Info p {
-    margin: 10px 0 0 0;
-    font-size: 0.85rem;
+    margin-top: 10px;
+    font-size: 30px;
     letter-spacing: 1px;
-    font-weight: bold;
 }
