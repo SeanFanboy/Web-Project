@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mako&display=swap');
 
 body {
     margin: 0;
@@ -80,6 +81,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-family: "Mako";
 }
 
 .Small-Info img {
