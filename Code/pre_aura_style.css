@@ -9,6 +9,16 @@ body {
     color: white;
 }
 
+.two-column {
+    color: black;
+    display: grid;
+    grid-template-columns: 1f 2fr;
+    margin: auto;
+    gap: 50px;
+    text-align: center;
+    font-family: "Mako";
+}
+
 .title {
     background-color: #2e6b22;
 }
@@ -37,3 +47,4 @@ body {
     text-align: center;
     font-size: 80px;
 }
+
