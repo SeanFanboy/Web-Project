@@ -12,11 +12,12 @@ body {
 .two-column {
     color: black;
     display: grid;
-    grid-template-columns: 1f 2fr;
+    grid-template-columns: 1fr 2fr;
     margin: auto;
     gap: 50px;
     text-align: center;
     font-family: "Mako";
+    object-position: center;
 }
 
 .title {
@@ -48,3 +49,10 @@ body {
     font-size: 80px;
 }
 
+.two-column-text p {
+    text-align: left;
+}
+
+.two-column-text strong {
+    font-size: 20px;
+}
