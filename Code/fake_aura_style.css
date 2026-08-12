@@ -12,7 +12,7 @@ body {
 .two-column {
     color: black;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
     gap: 50px;
     text-align: center;
@@ -58,5 +58,10 @@ body {
 }
 
 .two-column-image {
-    padding-left: 700px;
+    padding-left: 100px;
+}
+
+.big-image img {
+    height: 100%;
+    width: 100%;
 }
