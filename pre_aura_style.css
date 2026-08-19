@@ -82,3 +82,7 @@ body {
     text-decoration: underline;
     color: #5858b0;
 }
+.two-column-image-1 {
+    width: auto;
+    height: 40%;
+}
